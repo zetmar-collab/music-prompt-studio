@@ -46,6 +46,10 @@ Instalator NSIS pojawi się w `dist/Music Prompt Studio-Setup-1.0.0.exe`.
 
 Klucz API przechowywany jest lokalnie w `settings.json` (katalog danych aplikacji) i nigdy nie trafia do kodu ani repozytorium.
 
+## Historia zmian
+
+Zobacz [CHANGELOG.md](CHANGELOG.md).
+
 ---
 
 © 2026 Marek Zettel · Cyfrowy Przyjaciel
