@@ -37,7 +37,7 @@
 
 ## ✨ Funkcje
 
-<img src="docs/preview.svg" alt="Podgląd aplikacji" width="100%">
+<img src="docs/screenshots/browse-dark.png" alt="Baza promptów — Music Prompt Studio" width="100%">
 
 | | |
 |---|---|
@@ -56,6 +56,12 @@
 **Suno** · **Udio** · **Mureka** · **Stable Audio** · **ElevenLabs** · **Riffusion** · **AIVA** · **Soundraw**
 
 Generator zna specyfikę każdego z nich i formatuje prompty odpowiednio (np. tagi `[ ]` dla Suno, format loop dla Stable Audio, kompozycje instrumentalne dla AIVA).
+
+### 🖼️ Zrzuty ekranu
+
+| Generator AI | Motyw jasny |
+|:---:|:---:|
+| <img src="docs/screenshots/generator.png" alt="Generator AI"> | <img src="docs/screenshots/browse-light.png" alt="Motyw jasny"> |
 
 ---
 
