@@ -1,0 +1,40 @@
+appId: pl.cyfrowyprzyjaciel.musicpromptstudio
+productName: Music Prompt Studio
+copyright: Copyright © 2026 Marek Zettel (Cyfrowy Przyjaciel)
+
+directories:
+  buildResources: build
+  output: dist
+
+files:
+  - out/**/*
+  - package.json
+
+extraResources:
+  - from: resources/prompts.seed.json
+    to: prompts.seed.json
+
+asarUnpack:
+  - "**/*.node"
+
+npmRebuild: true
+
+win:
+  target:
+    - target: nsis
+      arch:
+        - x64
+  icon: build/icon.ico
+  artifactName: ${productName}-Setup-${version}.${ext}
+
+nsis:
+  oneClick: false
+  perMachine: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: Music Prompt Studio
+  installerIcon: build/icon.ico
+  uninstallerIcon: build/icon.ico
+  installerHeaderIcon: build/icon.ico
+  deleteAppDataOnUninstall: false
