@@ -1,0 +1,45 @@
+name: Build & Release (Windows)
+
+# Buduje instalator Windows i publikuje Release przy każdym tagu vX.Y.Z.
+# Użycie:
+#   1. Podbij wersję w package.json
+#   2. git commit -am "vX.Y.Z" && git push
+#   3. git tag vX.Y.Z && git push origin vX.Y.Z
+# Można też uruchomić ręcznie (workflow_dispatch).
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-windows:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate prompt seed
+        run: node scripts/gen-seed.mjs
+
+      - name: Build app bundles
+        run: npm run build
+
+      - name: Build installer & publish release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npx electron-builder --win nsis --publish always

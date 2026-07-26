@@ -6,6 +6,12 @@ directories:
   buildResources: build
   output: dist
 
+publish:
+  provider: github
+  owner: zetmar-collab
+  repo: music-prompt-studio
+  releaseType: release
+
 files:
   - out/**/*
   - package.json
