@@ -95,7 +95,7 @@ export default function Help(): JSX.Element {
                 ? 'Baza i ustawienia zapisywane są lokalnie na Twoim komputerze. Klucz API nigdy nie opuszcza urządzenia.'
                 : 'The library and settings are stored locally on your computer. Your API key never leaves the device.'}
             </p>
-            <p className="help-footer">© 2026 Marek Zettel · Cyfrowy Przyjaciel · v1.3.0</p>
+            <p className="help-footer">© 2026 Marek Zettel · Cyfrowy Przyjaciel · v1.3.1</p>
           </section>
         </div>
 

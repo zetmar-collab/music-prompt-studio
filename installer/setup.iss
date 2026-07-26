@@ -3,7 +3,7 @@
 ; Omija winCodeSign electron-buildera (problem z symlinkami macOS na Windows bez trybu dev).
 
 #define MyAppName "Music Prompt Studio"
-#define MyAppVersion "1.3.0"
+#define MyAppVersion "1.3.1"
 #define MyAppPublisher "Marek Zettel (Cyfrowy Przyjaciel)"
 #define MyAppExeName "Music Prompt Studio.exe"
 #define MyAppId "{{B7F3A1E2-9C4D-4E8A-A1B2-4D5E6F7A8B90}"

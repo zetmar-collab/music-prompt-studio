@@ -1,6 +1,6 @@
 {
   "name": "music-prompt-studio",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "description": "Music Prompt Studio — tysiące promptów dla narzędzi AI do tworzenia muzyki (Suno, Udio, Mureka, Stable Audio, ElevenLabs). Baza, generator, ulubione, tagowanie, eksport, własne szablony. Silniki: Gemini API + lokalny Ollama.",
   "author": "Marek Zettel (Cyfrowy Przyjaciel)",
   "license": "MIT",
